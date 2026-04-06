@@ -1,0 +1,24 @@
+Godot can manage Javascript and HTML! (which means that I can make a webpage, but it's actually a Godot Game)
+https://docs.godotengine.org/en/stable/tutorials/platform/web/index.html
+
+Puts a spotify profile up
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Template</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+	<p align="center">
+            <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31zj5y7cnsyoauji3yd47upxsqmq&redirect=true">
+                <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31zj5y7cnsyoauji3yd47upxsqmq&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&mode=light&bar_color=53b14f&bar_color_cover=true">
+            </a>
+        </p>
+        <script src="$GODOT_URL"></script>
+        <script>
+            var engine = new Engine($GODOT_CONFIG);
+            engine.startGame();
+        </script>
+    </body>
+</html>

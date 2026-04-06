@@ -1,0 +1,11 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1775512667
+::res://Codespaces/::1775512640
+::res://Godot/::1775512667
+character_body_2d.gd::GDScript::9177642000497308605::1775348416::0::1::::<>CharacterBody2D<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1775348980::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::5132190343335211079::1775348276::1775512669::1::::<><><>0<>0<>11fb956b11493c9f552af849c2e99457<>res://.godot/imported/icon.svg-ebe728e99ae17fadf353a36d282be471.ctex::
+main.gd::GDScript::3281910280811495854::1775512323::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::7432744404660332150::1775512667::0::1::::<><><>0<>0<><>::uid://d30yom318kb2d::::res://Godot/character_body_2d.gd<>uid://bm01t20vhil4y::::res://Godot/main.gd<>uid://cfecoppnwaymp::::res://Godot/icon.svg<>uid://cmxa1vutmi0bj::::res://Godot/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png
+Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png::CompressedTexture2D::5662635744793586671::1775348534::1775512669::1::::<><><>0<>0<>0fbc2385439a877b378d8c17053a0ce4<>res://.godot/imported/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png-54b83d809c2be63ca342911c997b55fe.ctex::
+thing.html.txt::TextFile::-1::1775349965::0::1::::<><><>0<>0<><>::
