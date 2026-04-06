@@ -50,4 +50,13 @@ offset_right = -1.0
 offset_bottom = -80.0
 text = "Hack Club Link"
 
+[node name="JavascriptLog" type="Button" parent="." unique_id=1459286404]
+offset_left = -143.0
+offset_top = -168.0
+offset_right = 23.0
+offset_bottom = -114.0
+text = "Javascript Log
+(through GDScript)"
+
 [connection signal="pressed" from="Linky" to="." method="_on_linky_pressed"]
+[connection signal="pressed" from="JavascriptLog" to="." method="_on_javascript_log_pressed"]
