@@ -62,5 +62,18 @@ text = "Javascript Log
 [node name="JavascriptCallback" type="Node2D" parent="." unique_id=1895764998]
 script = ExtResource("5_vnup7")
 
+[node name="TextLink" type="RichTextLabel" parent="." unique_id=1839852939]
+offset_left = 45.0
+offset_top = -244.0
+offset_right = 172.0
+offset_bottom = -175.0
+bbcode_enabled = true
+text = "this is some text
+asdfafd
+[url=https://hackclub.com/]linking[/url]"
+fit_content = true
+autowrap_mode = 0
+
 [connection signal="pressed" from="Linky" to="." method="_on_linky_pressed"]
 [connection signal="pressed" from="JavascriptLog" to="." method="_on_javascript_log_pressed"]
+[connection signal="meta_clicked" from="TextLink" to="." method="_on_text_link_meta_clicked"]

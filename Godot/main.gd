@@ -15,3 +15,9 @@ func _ready():
 
 func _on_javascript_log_pressed() -> void:
 	JavaScriptBridge.eval("window.console.log('calling thru the windowwwwww');")
+
+
+func _on_text_link_meta_clicked(meta: Variant) -> void:
+	# `meta` is not guaranteed to be a String, so convert it to a String
+	# to avoid script errors at runtime.
+	OS.shell_open(str(meta))

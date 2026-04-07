@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://sfudhvqa4i70"]
 
-[ext_resource type="Script" uid="uid://dw7u1qp3kl1ug" path="res://Godot/3dStuff/dice_spawner.gd" id="1_4242w"]
-[ext_resource type="PackedScene" uid="uid://retp22x7aolk" path="res://Godot/3dStuff/d_6.tscn" id="2_ip1tc"]
+[ext_resource type="PackedScene" uid="uid://bodbf1h6ndftb" path="res://Godot/3dStuff/dice_spawner.tscn" id="1_ip1tc"]
+[ext_resource type="PackedScene" uid="uid://c4jxjmge86wfc" path="res://Godot/3dStuff/d_20.tscn" id="2_uffmi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dxtmk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -40,14 +40,9 @@ mesh = SubResource("PlaneMesh_ip1tc")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1744539054]
 transform = Transform3D(0.92456, -0.28712574, 0.25049478, 0, 0.65740365, 0.7535386, -0.3810365, -0.6966917, 0.6078091, 5.376351, 12.897147, 8.591308)
 
-[node name="DiceSpawner" type="Node3D" parent="." unique_id=487403126]
+[node name="DiceSpawner" parent="." unique_id=847745559 instance=ExtResource("1_ip1tc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
-script = ExtResource("1_4242w")
-dice = ExtResource("2_ip1tc")
 
-[node name="Timer" type="Timer" parent="DiceSpawner" unique_id=1570736531]
-process_callback = 0
-wait_time = 0.7
-autostart = true
-
-[connection signal="timeout" from="DiceSpawner/Timer" to="DiceSpawner" method="_on_timer_timeout"]
+[node name="DiceSpawner2" parent="." unique_id=1321969250 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+dice = ExtResource("2_uffmi")

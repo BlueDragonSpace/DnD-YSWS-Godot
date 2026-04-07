@@ -20,12 +20,13 @@ javascript_callback.gd::GDScript::6004855171624453642::1775520061::0::1::::<>Nod
 main.gd::GDScript::3281910280811495854::1775515981::0::1::::<>Node2D<><>0<>0<><>::
 main.tscn::PackedScene::7432744404660332150::1775520061::0::1::::<><><>0<>0<><>::uid://d30yom318kb2d::::res://Godot/character_body_2d.gd<>uid://bm01t20vhil4y::::res://Godot/main.gd<>uid://cfecoppnwaymp::::res://Godot/icon.svg<>uid://cmxa1vutmi0bj::::res://Godot/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png<>uid://crs2c78podky1::::res://Godot/javascript_callback.gd
 Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png::CompressedTexture2D::5662635744793586671::1775348534::1775512669::1::::<><><>0<>0<>0fbc2385439a877b378d8c17053a0ce4<>res://.godot/imported/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png-54b83d809c2be63ca342911c997b55fe.ctex::
-::res://Godot/3dStuff/::1775524331
-d20.glb::PackedScene::7293773815526452870::1775524328::1775524373::1::::<><><>0<>0<>510f4d74b613e1dbdf851ec1b6c2e38c<>res://.godot/imported/d20.glb-7832e77b36066ccfd7d52cece9965526.scn::
+::res://Godot/3dStuff/::1775524390
+d20.glb::PackedScene::7293773815526452870::1775524328::1775524460::1::::<><><>0<>0<>510f4d74b613e1dbdf851ec1b6c2e38c<>res://.godot/imported/d20.glb-7832e77b36066ccfd7d52cece9965526.scn::
 falling_dice.tscn::PackedScene::1274941172324386465::1775522809::0::1::::<><><>0<>0<><>::uid://dw7u1qp3kl1ug::::res://Godot/3dStuff/dice_spawner.gd<>uid://retp22x7aolk::::res://Godot/3dStuff/d_6.tscn
 dice_spawner.gd::GDScript::8770738334574471886::1775522885::0::1::::<>Node3D<><>0<>0<><>::
 d_6.tscn::PackedScene::1202649723561893080::1775522455::0::1::::<><><>0<>0<><>::
 dice_spawner.tscn::PackedScene::3375328651696754211::1775522902::0::1::::<><><>0<>0<><>::uid://dw7u1qp3kl1ug::::res://Godot/3dStuff/dice_spawner.gd<>uid://retp22x7aolk::::res://Godot/3dStuff/d_6.tscn
+d_20.tscn::PackedScene::6828310435430565004::1775524390::0::1::::<><><>0<>0<><>::uid://db6fnh2rck1ck::::res://Godot/3dStuff/d20.glb
 ::res://GodotExport/::1775517364
 ::res://GodotExport/1/::1775515021
 index.apple-touch-icon.png::CompressedTexture2D::4090351322206157928::1775514598::1775515021::1::::<><><>0<>0<>e4655fe15e4727b756c144728d487e16<>res://.godot/imported/index.apple-touch-icon.png-b69f83c1ef66d2b6b17f6d3e502c0a52.ctex::

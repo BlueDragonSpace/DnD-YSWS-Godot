@@ -1,4 +1,9 @@
 res://addons/godot_super-wakatime/api_key_prompt.tscn::a6988a5ba43d5aa92a08f216c1db28db::1775512861::res://.godot/exported/133200997/export-cd8705cb5e2533bd79c64579ac674dae-api_key_prompt.scn
 res://addons/godot_super-wakatime/counter.tscn::7f13ad35960e259f6de719f9785ce249::1775512861::res://.godot/exported/133200997/export-4af6c9115c1c285af5925fa1ce6a526e-counter.scn
-res://Godot/main.tscn::3e287f9f54487994651c8c0213d68fbd::1775519707::res://.godot/exported/133200997/export-cc67b50f09cba717d41c08db752aded6-main.scn
+res://Godot/main.tscn::40f687d60dba2df05ca15c15907d12df::1775575163::res://.godot/exported/133200997/export-cc67b50f09cba717d41c08db752aded6-main.scn
 res://Godot/ball.tscn::c7593fb1369538f5ac6733a30ba55239::1775518763::res://.godot/exported/133200997/export-59c1a86f90a1fbc8dde4c98129743bc1-ball.scn
+res://Godot/3dStuff/falling_dice.tscn::9ab75b81805ca88ba54b94b50e441124::1775574552::res://.godot/exported/133200997/export-b152fa9af80f0b810d1f325a793364b0-falling_dice.scn
+res://Godot/3dStuff/d_6.tscn::63dc5b0b0a5a32ae732387a73e69c96b::1775522455::res://.godot/exported/133200997/export-6f855c7296e94393c92de820c53e04cb-d_6.scn
+res://Godot/3dStuff/dice_spawner.tscn::df1d7dc8d5c0527c31b97f4a851f0460::1775522902::res://.godot/exported/133200997/export-ad5bd2490963148e8f3d93984713c50e-dice_spawner.scn
+res://Godot/3dStuff/d_20.tscn::dde7b871a6f2bad348f44ee42236812e::1775574694::res://.godot/exported/133200997/export-38c5b30cd12a90c7f30f40314b499bba-d_20.scn
+res://Godot/3dStuff/d20Collision.tres::03bf43790209fa64fee00abd7ff95bea::1775574679::res://.godot/exported/133200997/export-5be8b23242cf6a85d720ba3236ff07fa-d20Collision.res
