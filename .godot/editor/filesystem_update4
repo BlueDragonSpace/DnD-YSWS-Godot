@@ -1,2 +1,5 @@
 res://Godot/main.tscn
 res://Godot/javascript_callback.gd
+res://Godot/3dStuff/falling_dice.tscn
+res://Godot/3dStuff/dice_spawner.gd
+res://Godot/3dStuff/d_6.tscn

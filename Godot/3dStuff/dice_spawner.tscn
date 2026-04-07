@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bodbf1h6ndftb"]
+
+[ext_resource type="Script" uid="uid://dw7u1qp3kl1ug" path="res://Godot/3dStuff/dice_spawner.gd" id="1_8parq"]
+[ext_resource type="PackedScene" uid="uid://retp22x7aolk" path="res://Godot/3dStuff/d_6.tscn" id="2_kupby"]
+
+[node name="DiceSpawner" type="Node3D" unique_id=847745559]
+script = ExtResource("1_8parq")
+dice = ExtResource("2_kupby")
+
+[node name="Timer" type="Timer" parent="." unique_id=1168542891]
+process_callback = 0
+wait_time = 0.7
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
