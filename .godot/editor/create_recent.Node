@@ -1,7 +1,9 @@
+CollisionShape2D
+RigidBody2D
+Node2D
 Button
 RichTextLabel
 Label
 Camera2D
-CollisionShape2D
 StaticBody2D
 CharacterBody2D

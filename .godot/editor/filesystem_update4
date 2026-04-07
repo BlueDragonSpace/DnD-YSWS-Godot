@@ -1,4 +1,2 @@
-res://main.tscn
-res://main.gd
-res://Godot/main.gd
 res://Godot/main.tscn
+res://Godot/javascript_callback.gd

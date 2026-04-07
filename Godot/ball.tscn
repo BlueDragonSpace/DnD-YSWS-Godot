@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c8kmdwepw5ts0"]
+
+[ext_resource type="Texture2D" uid="uid://cmxa1vutmi0bj" path="res://Godot/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png" id="1_sg6h3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s1wyj"]
+
+[node name="Ball" type="RigidBody2D" unique_id=971849047]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=174661772]
+shape = SubResource("CircleShape2D_s1wyj")
+
+[node name="SavageGsmedGreenScreenSuitMedium1312363278813418" type="Sprite2D" parent="." unique_id=384592366]
+position = Vector2(-2.3841858e-07, 0.50000024)
+scale = Vector2(0.044000003, 0.018000001)
+texture = ExtResource("1_sg6h3")
