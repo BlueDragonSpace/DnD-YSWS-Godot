@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bebn1jok0642r"]
+
+[ext_resource type="PackedScene" uid="uid://cau3lq2vvxq4k" path="res://Godot/3dStuff/dices/d8/d_8mesh.tscn" id="1_2kjn2"]
+[ext_resource type="Shape3D" uid="uid://dpsbgw5frdl65" path="res://Godot/3dStuff/dices/d8/d8Collision.tres" id="2_bnleb"]
+
+[node name="d_8" type="RigidBody3D" unique_id=2133500796]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="d8" parent="." unique_id=556660924 instance=ExtResource("1_2kjn2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=713312236]
+shape = ExtResource("2_bnleb")

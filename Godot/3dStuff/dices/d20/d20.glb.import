@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://db6fnh2rck1ck"
-path="res://.godot/imported/d20.glb-7832e77b36066ccfd7d52cece9965526.scn"
+path="res://.godot/imported/d20.glb-aa7871798b1c0ae0522a726ef79c2c70.scn"
 
 [deps]
 
-source_file="res://Godot/3dStuff/d20.glb"
-dest_files=["res://.godot/imported/d20.glb-7832e77b36066ccfd7d52cece9965526.scn"]
+source_file="res://Godot/3dStuff/dices/d20/d20.glb"
+dest_files=["res://.godot/imported/d20.glb-aa7871798b1c0ae0522a726ef79c2c70.scn"]
 
 [params]
 

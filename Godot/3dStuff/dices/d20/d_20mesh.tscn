@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cqsf4oxfdkj1e"]
+
+[ext_resource type="PackedScene" uid="uid://db6fnh2rck1ck" path="res://Godot/3dStuff/dices/d20/d20.glb" id="1_t4bmv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1gdpx"]
+albedo_color = Color(1, 1, 0.39215687, 1)
+
+[node name="d20" unique_id=622091526 instance=ExtResource("1_t4bmv")]
+
+[node name="Icosphere" parent="." index="0" unique_id=2030074431]
+material_override = SubResource("StandardMaterial3D_1gdpx")

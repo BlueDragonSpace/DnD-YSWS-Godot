@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cau3lq2vvxq4k"]
+
+[ext_resource type="PackedScene" uid="uid://dbipqfvhy0nxo" path="res://Godot/3dStuff/dices/d8/d8.glb" id="1_f11lh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4qhm6"]
+albedo_color = Color(0.39215687, 1, 0.39215687, 1)
+
+[node name="d8" unique_id=556660924 instance=ExtResource("1_f11lh")]
+
+[node name="Cube" parent="." index="0" unique_id=491735575]
+material_override = SubResource("StandardMaterial3D_4qhm6")

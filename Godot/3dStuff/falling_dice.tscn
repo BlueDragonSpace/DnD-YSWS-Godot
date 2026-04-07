@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://sfudhvqa4i70"]
 
-[ext_resource type="PackedScene" uid="uid://bodbf1h6ndftb" path="res://Godot/3dStuff/dice_spawner.tscn" id="1_ip1tc"]
-[ext_resource type="PackedScene" uid="uid://c4jxjmge86wfc" path="res://Godot/3dStuff/d_20.tscn" id="2_uffmi"]
+[ext_resource type="PackedScene" uid="uid://bodbf1h6ndftb" path="res://Godot/3dStuff/dices/dice_spawner.tscn" id="1_ip1tc"]
+[ext_resource type="PackedScene" uid="uid://dnsfrmwqamttd" path="res://Godot/3dStuff/dices/d4/d_4.tscn" id="2_u3lvg"]
+[ext_resource type="PackedScene" uid="uid://c4jxjmge86wfc" path="res://Godot/3dStuff/dices/d20/d_20.tscn" id="2_uffmi"]
+[ext_resource type="PackedScene" uid="uid://bebn1jok0642r" path="res://Godot/3dStuff/dices/d8/d_8.tscn" id="4_u3lvg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dxtmk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -16,6 +18,9 @@ sky = SubResource("Sky_4242w")
 tonemap_mode = 2
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_dxtmk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uffmi"]
+albedo_color = Color(0.096204735, 0.09620475, 0.096204735, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ip1tc"]
 size = Vector2(10, 10)
@@ -35,14 +40,23 @@ shadow_enabled = true
 shape = SubResource("WorldBoundaryShape3D_dxtmk")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=1287648668]
+material_override = SubResource("StandardMaterial3D_uffmi")
 mesh = SubResource("PlaneMesh_ip1tc")
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1744539054]
-transform = Transform3D(0.92456, -0.28712574, 0.25049478, 0, 0.65740365, 0.7535386, -0.3810365, -0.6966917, 0.6078091, 5.376351, 12.897147, 8.591308)
 
 [node name="DiceSpawner" parent="." unique_id=847745559 instance=ExtResource("1_ip1tc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+timer_time = 1.2
+
+[node name="DiceSpawner3" parent="." unique_id=359041000 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+dice = ExtResource("2_u3lvg")
 
 [node name="DiceSpawner2" parent="." unique_id=1321969250 instance=ExtResource("1_ip1tc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
 dice = ExtResource("2_uffmi")
+timer_time = 0.8
+
+[node name="DiceSpawner4" parent="." unique_id=1748142216 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+dice = ExtResource("4_u3lvg")
+timer_time = 0.6

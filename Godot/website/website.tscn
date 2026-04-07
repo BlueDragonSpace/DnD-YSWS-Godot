@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://dvg12iuyup0ys"]
+
+[ext_resource type="Script" uid="uid://b6gk6atpx0la1" path="res://Godot/website/website.gd" id="1_2r0q0"]
+[ext_resource type="Texture2D" uid="uid://cfecoppnwaymp" path="res://Godot/icon.svg" id="2_3tjv2"]
+[ext_resource type="PackedScene" uid="uid://sfudhvqa4i70" path="res://Godot/3dStuff/falling_dice.tscn" id="3_scejv"]
+[ext_resource type="Texture2D" uid="uid://cmxa1vutmi0bj" path="res://Godot/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png" id="4_3tjv2"]
+
+[sub_resource type="Gradient" id="Gradient_3tjv2"]
+colors = PackedColorArray(0.8039216, 0.5372549, 0, 1, 0.15422979, 0.5416107, 0.81768286, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_scejv"]
+domain_warp_enabled = true
+domain_warp_type = 2
+metadata/_preview_in_3d_space_ = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_iykgy"]
+noise = SubResource("FastNoiseLite_scejv")
+color_ramp = SubResource("Gradient_3tjv2")
+in_3d_space = true
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_iykgy"]
+viewport_path = NodePath("FallingDice/SubViewport")
+
+[node name="Website" type="Control" unique_id=1684838624]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2r0q0")
+
+[node name="Noise" type="TextureRect" parent="." unique_id=2038354946]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("NoiseTexture2D_iykgy")
+stretch_mode = 6
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1328380754]
+layout_mode = 0
+offset_left = 904.0
+offset_top = -296.0
+offset_right = 1404.0
+offset_bottom = 204.0
+texture = ExtResource("4_3tjv2")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1530294774]
+layout_mode = 0
+offset_left = -266.0
+offset_top = 424.0
+offset_right = 234.0
+offset_bottom = 924.0
+texture = ExtResource("4_3tjv2")
+
+[node name="MainContainer" type="VBoxContainer" parent="." unique_id=1122133326]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 422.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MainContainer" unique_id=1960239974]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MainContainer/VBoxContainer3" unique_id=1109200634]
+layout_mode = 2
+texture = ExtResource("2_3tjv2")
+stretch_mode = 5
+
+[node name="TextureRect2" type="Label" parent="MainContainer/VBoxContainer3" unique_id=1338291843]
+layout_mode = 2
+text = "Ship a tool for a TTRPG (like D&D!) get free dice!"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer" unique_id=1050123547]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/VBoxContainer" unique_id=588062352]
+layout_mode = 2
+text = "TExting big texts"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MainContainer/VBoxContainer" unique_id=638950632]
+layout_mode = 2
+text = "Cannot lie"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="MainContainer/VBoxContainer" unique_id=1642693579]
+layout_mode = 2
+text = "TExting big texts"
+horizontal_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="MainContainer" unique_id=135902899]
+layout_mode = 2
+texture = ExtResource("2_3tjv2")
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="MainContainer" unique_id=1455701936]
+layout_mode = 2
+texture = SubResource("ViewportTexture_iykgy")
+stretch_mode = 5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MainContainer" unique_id=1811512648]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/VBoxContainer2" unique_id=37935033]
+layout_mode = 2
+text = "TExting big texts"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MainContainer/VBoxContainer2" unique_id=1390453876]
+layout_mode = 2
+text = "Cannot lie"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="MainContainer/VBoxContainer2" unique_id=1955948464]
+layout_mode = 2
+text = "TExting big texts"
+horizontal_alignment = 1
+
+[node name="FallingDice" parent="." unique_id=855874347 instance=ExtResource("3_scejv")]
+
+[node name="SubViewport" type="SubViewport" parent="FallingDice" unique_id=83578143]
+size = Vector2i(1152, 512)
+
+[node name="Camera3D2" type="Camera3D" parent="FallingDice/SubViewport" unique_id=1808572799]
+transform = Transform3D(0.96054703, -0.13546151, 0.24289836, 0, 0.87336546, 0.4870655, -0.27811766, -0.4678493, 0.8389086, 2.443631, 4.3696833, 7.150581)
+
+[connection signal="resized" from="MainContainer" to="." method="_on_main_container_resized"]

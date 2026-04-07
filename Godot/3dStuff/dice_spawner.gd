@@ -2,8 +2,14 @@ extends Node3D
 
 @export var dice : PackedScene = null
 @export var rand_pos = Vector3(5, 0, 5) # random position
+@export var timer_time = 0.7 ## time till next die spawn
 # spawns at same position on y-axis, 
 # spawns at some random position on x and z-axis
+
+@onready var timer: Timer = $Timer
+
+func _ready() -> void:
+	timer.wait_time = timer_time
 
 func _on_timer_timeout() -> void:
 	var child = dice.instantiate()
