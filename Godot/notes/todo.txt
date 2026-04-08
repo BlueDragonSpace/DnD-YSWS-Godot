@@ -1,0 +1,10 @@
+Bing bong bing bong
+
+Save/Load
+Referral Screen + Rewards
+Gif as Loading Screen? (like 3hk0)
+Hack Club Orpheus Flag on Top Left (through HTML)
+
+Issues:
+	Recieve and Interpret OTP
+	Automatically send me emails
