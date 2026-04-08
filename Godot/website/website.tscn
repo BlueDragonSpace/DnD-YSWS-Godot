@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cmxa1vutmi0bj" path="res://Godot/Savage_GSMED_Green_Screen_Suit_Medium_1312363278_813418.png" id="4_3tjv2"]
 [ext_resource type="Texture2D" uid="uid://b23e3f3bqg5oi" path="res://placeholderArt/insertTitle2.png" id="4_scejv"]
 [ext_resource type="PackedScene" uid="uid://cifnoyyc45ijj" path="res://Godot/website/invis_h_sep.tscn" id="5_iykgy"]
+[ext_resource type="Texture2D" uid="uid://17ob6b3ujgga" path="res://placeholderArt/backPixelArt.png" id="7_gofdy"]
+[ext_resource type="PackedScene" uid="uid://byhj7jet3q7c" path="res://Godot/website/invis_v_sep.tscn" id="8_ks1pw"]
 
 [sub_resource type="Gradient" id="Gradient_3tjv2"]
 colors = PackedColorArray(0.8039216, 0.5372549, 0, 1, 0.15422979, 0.5416107, 0.81768286, 1)
@@ -22,6 +24,243 @@ in_3d_space = true
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_iykgy"]
 viewport_path = NodePath("FallingDice/SubViewport")
+
+[sub_resource type="Animation" id="Animation_najhv"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Margins:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Margins:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Margins:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Margins:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LogInScreen:modulate:r")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LogInScreen:modulate:g")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("LogInScreen:modulate:b")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.5568628, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("LogInScreen:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("LogInScreen:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Margins:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_iykgy"]
+resource_name = "log_in_fade_in"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Margins:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.7607843, -0.5333333, 0.10647893, 0, 0),
+"times": PackedFloat32Array(0.033333335, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Margins:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.78039217, -0.16666667, 0.036601305, 0, 0),
+"times": PackedFloat32Array(0.033333335, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Margins:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.5803922, -0.16666667, 0.06993464, 0, 0),
+"times": PackedFloat32Array(0.033333335, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Margins:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.5, 0.61372113, 0, 0),
+"times": PackedFloat32Array(0.53333336, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LogInScreen:modulate:r")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.75, -0.1551081, 1, -0.15833335, 0, 0, 0),
+"times": PackedFloat32Array(1.05, 1.9666667)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LogInScreen:modulate:g")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.15833335, 0, 0, 0),
+"times": PackedFloat32Array(1.05, 1.9666667)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("LogInScreen:modulate:b")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.5568628, -0.25, 0, 0.75, -0.0736413, 1, -0.15833335, -0.07385621, 0, 0),
+"times": PackedFloat32Array(1.05, 1.9666667)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("LogInScreen:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0.54287845, 1, -0.23333335, -0.32289338, 0, 0),
+"times": PackedFloat32Array(1.05, 1.4)
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("LogInScreen:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1, 1.0333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, false, true, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Margins:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1, 1.0333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, true, false, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_00uop"]
+_data = {
+&"RESET": SubResource("Animation_najhv"),
+&"log_in_fade_in": SubResource("Animation_iykgy")
+}
 
 [node name="Website" type="Control" unique_id=1684838624]
 layout_mode = 3
@@ -86,7 +325,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.1
 
-[node name="MainContainer" type="Control" parent="Margins" unique_id=627605952]
+[node name="MainContainer" type="Control" parent="Margins" unique_id=60236334]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -102,7 +341,7 @@ size_flags_stretch_ratio = 0.09
 layout_mode = 0
 offset_top = 8.0
 offset_right = 967.0
-offset_bottom = 536.0
+offset_bottom = 537.0
 alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Margins/MainContainer/VBoxContainer3" unique_id=1109200634]
@@ -113,30 +352,37 @@ expand_mode = 5
 [node name="TextureRect2" type="Label" parent="Margins/MainContainer/VBoxContainer3" unique_id=1338291843]
 layout_mode = 2
 text = "Ship a tool for a TTRPG (like D&D!) get free dice!
-
-Sign up with your email below!"
+"
 horizontal_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Margins/MainContainer/VBoxContainer3" unique_id=1653156466]
+[node name="TextAboveEmailInput" type="Label" parent="Margins/MainContainer/VBoxContainer3" unique_id=328075622]
 layout_mode = 2
+text = "Sign up with your email below!"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margins/MainContainer/VBoxContainer3" unique_id=2131234456]
+layout_mode = 2
+alignment = 1
+
+[node name="EmailInput" type="LineEdit" parent="Margins/MainContainer/VBoxContainer3/HBoxContainer" unique_id=1653156466]
+layout_mode = 2
+size_flags_horizontal = 3
 placeholder_text = "orpheus@gmail.com"
 alignment = 1
 
 [node name="InvisHSep" parent="Margins/MainContainer" unique_id=1384510986 instance=ExtResource("5_iykgy")]
 layout_mode = 0
-offset_top = 540.0
+offset_top = 541.0
 offset_right = 967.0
-offset_bottom = 544.0
+offset_bottom = 545.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.04
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Margins/MainContainer" unique_id=1050123547]
 layout_mode = 0
-offset_top = 548.0
+offset_top = 549.0
 offset_right = 967.0
-offset_bottom = 625.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_bottom = 626.0
 
 [node name="Label" type="Label" parent="Margins/MainContainer/VBoxContainer" unique_id=588062352]
 layout_mode = 2
@@ -155,28 +401,26 @@ horizontal_alignment = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Margins/MainContainer" unique_id=135902899]
 layout_mode = 0
-offset_top = 629.0
+offset_top = 630.0
 offset_right = 967.0
-offset_bottom = 757.0
+offset_bottom = 758.0
 texture = ExtResource("2_3tjv2")
 stretch_mode = 5
 
 [node name="TextureRect3" type="TextureRect" parent="Margins/MainContainer" unique_id=1455701936]
 layout_mode = 0
-offset_top = 761.0
+offset_top = 762.0
 offset_right = 967.0
-offset_bottom = 1190.0
+offset_bottom = 1191.0
 texture = SubResource("ViewportTexture_iykgy")
 expand_mode = 5
 stretch_mode = 5
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Margins/MainContainer" unique_id=1811512648]
 layout_mode = 0
-offset_top = 1194.0
+offset_top = 1195.0
 offset_right = 967.0
-offset_bottom = 1271.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_bottom = 1307.0
 
 [node name="Label" type="Label" parent="Margins/MainContainer/VBoxContainer2" unique_id=37935033]
 layout_mode = 2
@@ -193,12 +437,16 @@ layout_mode = 2
 text = "TExting big texts"
 horizontal_alignment = 1
 
+[node name="ClearMemory" type="Button" parent="Margins/MainContainer/VBoxContainer2" unique_id=1452936945]
+layout_mode = 2
+text = "Clear Memory"
+
 [node name="LastMargin" type="HSeparator" parent="Margins/MainContainer" unique_id=160742458]
 self_modulate = Color(0, 0, 1, 1)
 layout_mode = 0
-offset_top = 1275.0
+offset_top = 1311.0
 offset_right = 967.0
-offset_bottom = 1279.0
+offset_bottom = 1315.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.09
 
@@ -208,4 +456,58 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.1
 
+[node name="LogInScreen" type="HBoxContainer" parent="." unique_id=84770238]
+visible = false
+modulate = Color(1, 1, 0.5568628, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LogInScreen" unique_id=1992570832]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="BackLogIn" type="Button" parent="LogInScreen/VBoxContainer" unique_id=642221418]
+layout_mode = 2
+icon = ExtResource("7_gofdy")
+icon_alignment = 1
+
+[node name="InvisVSep3" parent="LogInScreen" unique_id=835279628 instance=ExtResource("8_ks1pw")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="HBoxContainer" type="VBoxContainer" parent="LogInScreen" unique_id=1457530400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InvisHSep" parent="LogInScreen/HBoxContainer" unique_id=1703655740 instance=ExtResource("5_iykgy")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="LogInScreen/HBoxContainer" unique_id=602521743]
+layout_mode = 2
+text = "Congrats you logged in
+Nothing here yet lol"
+horizontal_alignment = 1
+
+[node name="InvisHSep2" parent="LogInScreen/HBoxContainer" unique_id=395638232 instance=ExtResource("5_iykgy")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InvisVSep2" parent="LogInScreen" unique_id=150215591 instance=ExtResource("8_ks1pw")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2088034840]
+libraries/ = SubResource("AnimationLibrary_00uop")
+
 [connection signal="resized" from="Margins/MainContainer" to="." method="_on_main_container_resized"]
+[connection signal="text_submitted" from="Margins/MainContainer/VBoxContainer3/HBoxContainer/EmailInput" to="." method="_on_email_input_text_submitted"]
+[connection signal="pressed" from="Margins/MainContainer/VBoxContainer2/ClearMemory" to="." method="_on_clear_memory_pressed"]
+[connection signal="pressed" from="LogInScreen/VBoxContainer/BackLogIn" to="." method="_on_back_log_in_pressed"]

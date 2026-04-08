@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://byhj7jet3q7c"]
+
+[node name="InvisVSep" type="VSeparator" unique_id=835279628]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 4.0
+offset_bottom = 40.0

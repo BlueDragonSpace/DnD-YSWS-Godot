@@ -1,10 +1,28 @@
 Bing bong bing bong
 
+Make sure Top Right First Frame looks good (cuz you know, before scrolling...)
+
+Check valid Email
+Check Valid OTP
+Send Email (with the OTP)
+
+Log-in, Interpret if Email is valid
+
 Save/Load
 Referral Screen + Rewards
-Gif as Loading Screen? (like 3hk0)
+Gif as Loading Screen? (like 3hk0) [through HTML]
 Hack Club Orpheus Flag on Top Left (through HTML)
 
 Issues:
 	Recieve and Interpret OTP
 	Automatically send me emails
+	Security? Godot's been known to be easy to reverse engineer
+
+Vanity:
+	Font
+	Title Art
+	Circles on edges, rotating like I imagined
+
+
+## Find your save files using path "C:\Users\ewcob\AppData\Roaming\Godot\app_userdata"
+# This is for local saves, for my purposes
