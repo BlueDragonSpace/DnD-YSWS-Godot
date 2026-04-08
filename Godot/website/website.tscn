@@ -319,13 +319,7 @@ offset_bottom = 536.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VSeparator" type="VSeparator" parent="Margins" unique_id=1148603950]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.1
-
-[node name="MainContainer" type="Control" parent="Margins" unique_id=60236334]
+[node name="MainContainer" type="Control" parent="Margins" unique_id=2097478237]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -420,7 +414,7 @@ stretch_mode = 5
 layout_mode = 0
 offset_top = 1195.0
 offset_right = 967.0
-offset_bottom = 1307.0
+offset_bottom = 1334.0
 
 [node name="Label" type="Label" parent="Margins/MainContainer/VBoxContainer2" unique_id=37935033]
 layout_mode = 2
@@ -441,12 +435,17 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "Clear Memory"
 
+[node name="Label4" type="Label" parent="Margins/MainContainer/VBoxContainer2" unique_id=1125151753]
+layout_mode = 2
+text = "Note: This will refresh the page if successful."
+horizontal_alignment = 1
+
 [node name="LastMargin" type="HSeparator" parent="Margins/MainContainer" unique_id=160742458]
 self_modulate = Color(0, 0, 1, 1)
 layout_mode = 0
-offset_top = 1311.0
+offset_top = 1338.0
 offset_right = 967.0
-offset_bottom = 1315.0
+offset_bottom = 1342.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.09
 

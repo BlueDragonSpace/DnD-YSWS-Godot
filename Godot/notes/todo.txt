@@ -13,10 +13,15 @@ Referral Screen + Rewards
 Gif as Loading Screen? (like 3hk0) [through HTML]
 Hack Club Orpheus Flag on Top Left (through HTML)
 
+Deleting data doesn't work on the web?
+
+Add links to Hack Club, DnD, and me!
+
 Issues:
 	Recieve and Interpret OTP
 	Automatically send me emails
 	Security? Godot's been known to be easy to reverse engineer
+	Could send as many automatic emails as you want, basically bad spam
 
 Vanity:
 	Font

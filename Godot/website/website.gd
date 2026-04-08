@@ -21,6 +21,7 @@ var user_email : String
 const recieving_email : String = 'bluedragon_space@outlook.com' # yes this is my email, have at it
 
 var checking_otp := false
+var otp_pass := false
 
 const save_path = "user://SaveFile.json"
 
@@ -83,7 +84,6 @@ func log_in() -> void:
 func is_email_valid(email: String) -> bool:
 	
 	if email and true:
-		user_email = email
 		return true 
 	else:
 		return false
@@ -113,7 +113,11 @@ func load_data():
 		file.close()
 		
 		text_above_email_input.text = "You're already signed in! :D"
+		
 		email_input.text = data[0]
+		user_email = data[0]
+		
+		otp_pass = true
 		
 	else:
 		print("No Save Data Found!")
@@ -124,7 +128,11 @@ func delete_data():
 	if dir:
 		var delete = dir.remove("user://SaveFile.json")
 		if delete == OK:
-			print("File deleted successfully")
+			print("File deleted successfully, restarting...")
+			get_tree().reload_current_scene() # restarts Godot exclusively
+			#JavaScriptBridge.eval("window.location.reload()") # restarts the webpage
+			
+			# should actually reload the page lol not just the Godot Part
 		else:
 			print("Error deleting file")
 
@@ -145,16 +153,27 @@ func _on_clear_memory_pressed() -> void:
 
 func _on_email_input_text_submitted(new_text: String) -> void:
 	
-	if is_email_valid(new_text) and not checking_otp:
+	if (is_otp_valid(new_text) and checking_otp) or (otp_pass and new_text == user_email):
+		# either you enter the otp after getting an email sent, or the website remembers, checks you're using the same email, and logs in without otp
+		if checking_otp:
+			save_data() # saves the email for next time
+		
+		checking_otp = false
+		
+		print(new_text, " and the ", user_email)
+		
+		log_in()
+		otp_pass = true
+		text_above_email_input.text = 'See you inside!'
+	elif is_email_valid(new_text) and not checking_otp:
 		checking_otp = true
 		send_otp(new_text)
 		user_email = new_text
-	elif is_otp_valid(new_text) and checking_otp:
-		save_data() # saves the email for next time
-		log_in()
+		text_above_email_input.text = "Check your email for a One Time Passcode, and put it here!"
 	else:
 		text_above_email_input.text = "That wasn't valid, try again? If you have issues email bluedragon_space@outlook.com"
 
 
 func _on_back_log_in_pressed() -> void:
 	animation_player.play_backwards("log_in_fade_in")
+	text_above_email_input.text = 'Hi again :)'

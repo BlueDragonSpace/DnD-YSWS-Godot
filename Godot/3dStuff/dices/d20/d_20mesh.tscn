@@ -9,3 +9,4 @@ albedo_color = Color(1, 1, 0.39215687, 1)
 
 [node name="Icosphere" parent="." index="0" unique_id=2030074431]
 material_override = SubResource("StandardMaterial3D_1gdpx")
+cast_shadow = 0

@@ -9,3 +9,4 @@ albedo_color = Color(1, 0.39215687, 1, 1)
 
 [node name="Cube" parent="." index="0" unique_id=284388380]
 material_override = SubResource("StandardMaterial3D_crp60")
+cast_shadow = 0
