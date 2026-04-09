@@ -274,6 +274,7 @@ size_flags_vertical = 3
 script = ExtResource("1_2r0q0")
 scroll_speed = 20
 skew = 1.0
+animate_noise = false
 
 [node name="FallingDice" parent="." unique_id=855874347 instance=ExtResource("3_scejv")]
 

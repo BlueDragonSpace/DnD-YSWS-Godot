@@ -13,8 +13,9 @@ extends Control
 @export var scroll_speed = 5
 @export var skew : float = 1.3
 @export var noise_speed = 2
-var scroll_limit : float # gets determined in ready (or redetermined on window change)
+@export var animate_noise := true
 
+var scroll_limit : float # gets determined in ready (or redetermined on window change)
 
 # now this, is PII (if only it could be PI: 3.141592653589793238462643383279502883...)
 var user_email : String
@@ -44,6 +45,9 @@ func _ready() -> void:
 	
 	scroll_limit = last_margin.position.y - size.y
 	
+	# random noise background
+	noise.texture.noise.seed = randi_range(0, 99999)
+	
 	if main_container is VBoxContainer:
 		push_error("MainContainer should be a Control node!")
 		print_rich("[color=red]MainContainer should be a Control node!!!!")
@@ -63,9 +67,10 @@ func _input(_event: InputEvent) -> void:
 		get_tree().reload_current_scene()
 
 func _process(delta: float) -> void:
-	noise.texture.noise.offset.x += delta * noise_speed
-	noise.texture.noise.offset.y += delta * noise_speed
-	noise.texture.noise.offset.z += delta * noise_speed * 3
+	if animate_noise:
+		noise.texture.noise.offset.x += delta * noise_speed
+		noise.texture.noise.offset.y += delta * noise_speed
+		noise.texture.noise.offset.z += delta * noise_speed * 3
 
 # custom Functions
 
