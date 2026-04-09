@@ -60,3 +60,6 @@ timer_time = 0.8
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
 dice = ExtResource("4_u3lvg")
 timer_time = 0.6
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1197689163]
+transform = Transform3D(0.94467515, -0.20929107, 0.25255936, 0, 0.7699802, 0.63806784, -0.3280076, -0.60276675, 0.72738117, 2.875741, 4.01053, 6.3938756)

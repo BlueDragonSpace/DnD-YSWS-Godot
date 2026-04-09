@@ -10,8 +10,13 @@ Log-in, Interpret if Email is valid
 
 Save/Load
 Referral Screen + Rewards
-Gif as Loading Screen? (like 3hk0) [through HTML]
-Hack Club Orpheus Flag on Top Left (through HTML)
+Gif as Loading Screen? (like 3hk0) [through HTML shell]
+Hack Club Orpheus Flag on Top Left (through HTML) -> HTML shell in downloads
+Cloud Storage Access
+Sign in with Slack instead? 
+
+	Orpheus flag -> https://workshops.hackclub.com/
+
 
 Deleting data doesn't work on the web? (use HTML localStorage)
 https://www.w3schools.com/html/html5_webstorage.asp
@@ -21,8 +26,10 @@ Add links to Hack Club, DnD, and me!
 Issues:
 	Recieve and Interpret OTP
 	Automatically send me emails
-	Security? Godot's been known to be easy to reverse engineer
+	Security? Godot's been known to be easy to reverse engineer (but to be fair the website supposed to be open-source anyway)
 	Could send as many automatic emails as you want, basically bad spam
+	Screen Readers and other 
+	Efficiency of Website (Cloudflare can help apparently)
 
 Vanity:
 	Font
@@ -32,3 +39,9 @@ Vanity:
 
 ## Find your save files using path "C:\Users\ewcob\AppData\Roaming\Godot\app_userdata"
 # This is for local saves, for my purposes
+
+This doesn't seem like such a good idea anymore because of all the things I have to link to HTML externally to make something like this work
+- especially when I've never built a website before
+I think that Godot *can* make this work, I just shouldn't put a tool on top of something that
+- I don't know how it works alone in the first place
+I'm probably gonna make a personal website like this though haha
