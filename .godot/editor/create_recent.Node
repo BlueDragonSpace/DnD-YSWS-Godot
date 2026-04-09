@@ -1,7 +1,7 @@
 Control
 VBoxContainer
-Button
 Label
+Button
 HBoxContainer
 VSeparator
 AnimationPlayer

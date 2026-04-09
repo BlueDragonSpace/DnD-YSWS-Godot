@@ -13,7 +13,8 @@ Referral Screen + Rewards
 Gif as Loading Screen? (like 3hk0) [through HTML]
 Hack Club Orpheus Flag on Top Left (through HTML)
 
-Deleting data doesn't work on the web?
+Deleting data doesn't work on the web? (use HTML localStorage)
+https://www.w3schools.com/html/html5_webstorage.asp
 
 Add links to Hack Club, DnD, and me!
 

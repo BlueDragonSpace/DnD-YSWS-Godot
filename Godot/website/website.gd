@@ -6,6 +6,7 @@ extends Control
 @onready var main_container: Control = $Margins/MainContainer
 @onready var last_margin: HSeparator = $Margins/MainContainer/LastMargin
 @onready var sub_viewport: SubViewport = $FallingDice/SubViewport
+@onready var falling_dice_viewer: TextureRect = $Margins/MainContainer/FallingDiceViewer
 @onready var email_input: LineEdit = $Margins/MainContainer/VBoxContainer3/HBoxContainer/EmailInput
 @onready var text_above_email_input: Label = $Margins/MainContainer/VBoxContainer3/TextAboveEmailInput
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -43,6 +44,9 @@ func _ready() -> void:
 		# skews on x axis based on y position
 		child.position.x = child.position.y * skew
 	
+	falling_dice_viewer.size.x = main_container.size.x * 4
+	falling_dice_viewer.position.x = -1 # makes sure the left edge is always off-screen
+	
 	scroll_limit = last_margin.position.y - size.y
 	
 	# random noise background
@@ -67,7 +71,8 @@ func _input(_event: InputEvent) -> void:
 		get_tree().reload_current_scene()
 
 func _process(delta: float) -> void:
-	if animate_noise:
+	
+	if animate_noise: # yeah no this lags the website like crazy
 		noise.texture.noise.offset.x += delta * noise_speed
 		noise.texture.noise.offset.y += delta * noise_speed
 		noise.texture.noise.offset.z += delta * noise_speed * 3
@@ -79,8 +84,10 @@ func shift_main_container(add_y: float) -> void:
 	main_container.position.x = main_container.position.y * skew
 
 func resize_website(new_size: int) -> void:
+	print('resizing website...')
 	@warning_ignore("narrowing_conversion")
-	sub_viewport.size.x = new_size * skew
+	sub_viewport.size.x = new_size
+	#falling_dice_viewer.position.x -= size.x / 9999 # tries to get as much of the important view as possible
 
 func log_in() -> void:
 	animation_player.play("log_in_fade_in")

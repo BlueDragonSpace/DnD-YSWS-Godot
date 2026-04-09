@@ -310,7 +310,7 @@ offset_right = 234.0
 offset_bottom = 924.0
 texture = ExtResource("4_3tjv2")
 
-[node name="Margins" type="HBoxContainer" parent="." unique_id=1645097705]
+[node name="Margins" type="Control" parent="." unique_id=175786172]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -320,14 +320,16 @@ offset_bottom = 536.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MainContainer" type="Control" parent="Margins" unique_id=2097478237]
-layout_mode = 2
+[node name="MainContainer" type="Control" parent="Margins" unique_id=520386983]
+anchors_preset = 0
+offset_right = 1058.0
+offset_bottom = 2016.0
 size_flags_horizontal = 3
 
 [node name="YetAnotherMargin" type="HSeparator" parent="Margins/MainContainer" unique_id=1485506172]
 self_modulate = Color(0, 0, 1, 1)
 layout_mode = 0
-offset_right = 967.0
+offset_right = 1058.0
 offset_bottom = 4.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.09
@@ -335,8 +337,8 @@ size_flags_stretch_ratio = 0.09
 [node name="VBoxContainer3" type="VBoxContainer" parent="Margins/MainContainer" unique_id=1960239974]
 layout_mode = 0
 offset_top = 8.0
-offset_right = 967.0
-offset_bottom = 537.0
+offset_right = 1058.0
+offset_bottom = 576.0
 alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Margins/MainContainer/VBoxContainer3" unique_id=1109200634]
@@ -367,17 +369,17 @@ alignment = 1
 
 [node name="InvisHSep" parent="Margins/MainContainer" unique_id=1384510986 instance=ExtResource("5_iykgy")]
 layout_mode = 0
-offset_top = 541.0
-offset_right = 967.0
-offset_bottom = 545.0
+offset_top = 580.0
+offset_right = 1058.0
+offset_bottom = 584.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.04
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Margins/MainContainer" unique_id=1050123547]
 layout_mode = 0
-offset_top = 549.0
-offset_right = 967.0
-offset_bottom = 626.0
+offset_top = 588.0
+offset_right = 1058.0
+offset_bottom = 665.0
 
 [node name="Label" type="Label" parent="Margins/MainContainer/VBoxContainer" unique_id=588062352]
 layout_mode = 2
@@ -396,26 +398,26 @@ horizontal_alignment = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Margins/MainContainer" unique_id=135902899]
 layout_mode = 0
-offset_top = 630.0
-offset_right = 967.0
-offset_bottom = 758.0
+offset_top = 669.0
+offset_right = 1058.0
+offset_bottom = 797.0
 texture = ExtResource("2_3tjv2")
 stretch_mode = 5
 
-[node name="TextureRect3" type="TextureRect" parent="Margins/MainContainer" unique_id=1455701936]
+[node name="FallingDiceViewer" type="TextureRect" parent="Margins/MainContainer" unique_id=1455701936]
 layout_mode = 0
-offset_top = 762.0
-offset_right = 967.0
-offset_bottom = 1191.0
+offset_top = 801.0
+offset_right = 1058.0
+offset_bottom = 1271.0
 texture = SubResource("ViewportTexture_iykgy")
-expand_mode = 5
-stretch_mode = 5
+expand_mode = 3
+stretch_mode = 6
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Margins/MainContainer" unique_id=1811512648]
 layout_mode = 0
-offset_top = 1195.0
-offset_right = 967.0
-offset_bottom = 1334.0
+offset_top = 1275.0
+offset_right = 1058.0
+offset_bottom = 1414.0
 
 [node name="Label" type="Label" parent="Margins/MainContainer/VBoxContainer2" unique_id=37935033]
 layout_mode = 2
@@ -441,18 +443,175 @@ layout_mode = 2
 text = "Note: This will refresh the page if successful."
 horizontal_alignment = 1
 
+[node name="LoremIpsum" type="Label" parent="Margins/MainContainer" unique_id=1758932186]
+layout_mode = 0
+offset_top = 1418.0
+offset_right = 1058.0
+offset_bottom = 1441.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum2" type="Label" parent="Margins/MainContainer" unique_id=1400466815]
+layout_mode = 0
+offset_top = 1445.0
+offset_right = 1058.0
+offset_bottom = 1468.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum3" type="Label" parent="Margins/MainContainer" unique_id=1802655966]
+layout_mode = 0
+offset_top = 1472.0
+offset_right = 1058.0
+offset_bottom = 1495.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum4" type="Label" parent="Margins/MainContainer" unique_id=1945387983]
+layout_mode = 0
+offset_top = 1499.0
+offset_right = 1058.0
+offset_bottom = 1522.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum5" type="Label" parent="Margins/MainContainer" unique_id=1366856728]
+layout_mode = 0
+offset_top = 1526.0
+offset_right = 1058.0
+offset_bottom = 1549.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum15" type="Label" parent="Margins/MainContainer" unique_id=1023801129]
+layout_mode = 0
+offset_top = 1553.0
+offset_right = 1058.0
+offset_bottom = 1576.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum16" type="Label" parent="Margins/MainContainer" unique_id=1166536811]
+layout_mode = 0
+offset_top = 1580.0
+offset_right = 1058.0
+offset_bottom = 1603.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum17" type="Label" parent="Margins/MainContainer" unique_id=222220544]
+layout_mode = 0
+offset_top = 1607.0
+offset_right = 1058.0
+offset_bottom = 1630.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum18" type="Label" parent="Margins/MainContainer" unique_id=444226155]
+layout_mode = 0
+offset_top = 1634.0
+offset_right = 1058.0
+offset_bottom = 1657.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum19" type="Label" parent="Margins/MainContainer" unique_id=1050371022]
+layout_mode = 0
+offset_top = 1661.0
+offset_right = 1058.0
+offset_bottom = 1684.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum20" type="Label" parent="Margins/MainContainer" unique_id=918838545]
+layout_mode = 0
+offset_top = 1688.0
+offset_right = 1058.0
+offset_bottom = 1711.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum21" type="Label" parent="Margins/MainContainer" unique_id=965731737]
+layout_mode = 0
+offset_top = 1715.0
+offset_right = 1058.0
+offset_bottom = 1738.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum22" type="Label" parent="Margins/MainContainer" unique_id=326789634]
+layout_mode = 0
+offset_top = 1742.0
+offset_right = 1058.0
+offset_bottom = 1765.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum6" type="Label" parent="Margins/MainContainer" unique_id=718889143]
+layout_mode = 0
+offset_top = 1769.0
+offset_right = 1058.0
+offset_bottom = 1792.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum7" type="Label" parent="Margins/MainContainer" unique_id=572617408]
+layout_mode = 0
+offset_top = 1796.0
+offset_right = 1058.0
+offset_bottom = 1819.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum8" type="Label" parent="Margins/MainContainer" unique_id=1675743892]
+layout_mode = 0
+offset_top = 1823.0
+offset_right = 1058.0
+offset_bottom = 1846.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum9" type="Label" parent="Margins/MainContainer" unique_id=67244772]
+layout_mode = 0
+offset_top = 1850.0
+offset_right = 1058.0
+offset_bottom = 1873.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum10" type="Label" parent="Margins/MainContainer" unique_id=2053408518]
+layout_mode = 0
+offset_top = 1877.0
+offset_right = 1058.0
+offset_bottom = 1900.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum11" type="Label" parent="Margins/MainContainer" unique_id=631719608]
+layout_mode = 0
+offset_top = 1904.0
+offset_right = 1058.0
+offset_bottom = 1927.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum12" type="Label" parent="Margins/MainContainer" unique_id=870938202]
+layout_mode = 0
+offset_top = 1931.0
+offset_right = 1058.0
+offset_bottom = 1954.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum13" type="Label" parent="Margins/MainContainer" unique_id=309856080]
+layout_mode = 0
+offset_top = 1958.0
+offset_right = 1058.0
+offset_bottom = 1981.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
+[node name="LoremIpsum14" type="Label" parent="Margins/MainContainer" unique_id=732595174]
+layout_mode = 0
+offset_top = 1985.0
+offset_right = 1058.0
+offset_bottom = 2008.0
+text = "This is a completely acceptable level of lorem Ipsum"
+
 [node name="LastMargin" type="HSeparator" parent="Margins/MainContainer" unique_id=160742458]
 self_modulate = Color(0, 0, 1, 1)
 layout_mode = 0
-offset_top = 1338.0
-offset_right = 967.0
-offset_bottom = 1342.0
+offset_top = 2012.0
+offset_right = 1058.0
+offset_bottom = 2016.0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.09
 
 [node name="VSeparator2" type="VSeparator" parent="Margins" unique_id=1401095483]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 2
+layout_mode = 0
+offset_left = 1062.0
+offset_right = 1168.0
+offset_bottom = 1184.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.1
 
