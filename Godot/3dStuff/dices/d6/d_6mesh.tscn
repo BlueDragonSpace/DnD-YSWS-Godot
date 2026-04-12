@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://x2bojcacs5pj"]
+
+[ext_resource type="PackedScene" uid="uid://bixjrvc6q62qs" path="res://Godot/3dStuff/dices/free3DModels/D6.gltf" id="1_cdylt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nwl8w"]
+albedo_color = Color(0, 0.6784314, 0.3764706, 1)
+
+[node name="D6" unique_id=1237757735 instance=ExtResource("1_cdylt")]
+
+[node name="Mesh" parent="." index="0" unique_id=2062696207]
+surface_material_override/0 = SubResource("StandardMaterial3D_nwl8w")

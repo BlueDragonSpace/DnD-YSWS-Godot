@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d3s1t8awygph4"]
+
+[ext_resource type="PackedScene" uid="uid://bjl8g058uf1fr" path="res://Godot/3dStuff/dices/free3DModels/D10 (1).gltf" id="1_tstlx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kim4p"]
+albedo_color = Color(0.86523443, 0.00032497884, 0.8018386, 1)
+
+[node name="D10 (1)" unique_id=30889755 instance=ExtResource("1_tstlx")]
+
+[node name="Mesh" parent="." index="0" unique_id=291177569]
+surface_material_override/0 = SubResource("StandardMaterial3D_kim4p")

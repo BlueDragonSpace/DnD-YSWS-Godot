@@ -1,18 +1,13 @@
 [gd_scene format=3 uid="uid://retp22x7aolk"]
 
+[ext_resource type="PackedScene" uid="uid://x2bojcacs5pj" path="res://Godot/3dStuff/dices/d6/d_6mesh.tscn" id="1_dg5j8"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_dxtmk"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a4pxf"]
-albedo_color = Color(0.39215687, 1, 1, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_4242w"]
 
 [node name="d_6" type="RigidBody3D" unique_id=633999904]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=824050618]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 shape = SubResource("BoxShape3D_dxtmk")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=606793124]
-material_override = SubResource("StandardMaterial3D_a4pxf")
-cast_shadow = 0
-mesh = SubResource("BoxMesh_4242w")
+[node name="D6" parent="." unique_id=1237757735 instance=ExtResource("1_dg5j8")]

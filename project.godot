@@ -12,7 +12,7 @@ config_version=5
 
 config/name="HTML Test"
 config/description="blah blah balh Spotify HTML shell or something"
-run/main_scene="uid://dvg12iuyup0ys"
+run/main_scene="uid://sfudhvqa4i70"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://cmxa1vutmi0bj"
 
@@ -51,6 +51,7 @@ powerscroll_up={
 [physics]
 
 3d/physics_engine="Jolt Physics"
+2d/default_gravity=3920.0
 
 [rendering]
 

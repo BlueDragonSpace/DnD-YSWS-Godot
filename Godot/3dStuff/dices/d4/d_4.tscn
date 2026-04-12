@@ -5,7 +5,7 @@
 
 [node name="d_4" type="RigidBody3D" unique_id=973562334]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=376483879]
-shape = ExtResource("1_pc176")
+[node name="D4" parent="." unique_id=939884382 instance=ExtResource("2_pc176")]
 
-[node name="d4" parent="." unique_id=1836152594 instance=ExtResource("2_pc176")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=731473590]
+shape = ExtResource("1_pc176")

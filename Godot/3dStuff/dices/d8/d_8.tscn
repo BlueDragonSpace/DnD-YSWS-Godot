@@ -4,9 +4,8 @@
 [ext_resource type="Shape3D" uid="uid://dpsbgw5frdl65" path="res://Godot/3dStuff/dices/d8/d8Collision.tres" id="2_bnleb"]
 
 [node name="d_8" type="RigidBody3D" unique_id=2133500796]
-transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 
-[node name="d8" parent="." unique_id=556660924 instance=ExtResource("1_2kjn2")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=713312236]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1047958919]
 shape = ExtResource("2_bnleb")
+
+[node name="D8" parent="." unique_id=1894528480 instance=ExtResource("1_2kjn2")]

@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://c4jxjmge86wfc"]
 
 [ext_resource type="Shape3D" uid="uid://rn2i3ynp5l3g" path="res://Godot/3dStuff/dices/d20/d20Collision.tres" id="1_2ukhs"]
-[ext_resource type="PackedScene" uid="uid://cqsf4oxfdkj1e" path="res://Godot/3dStuff/dices/d20/d_20mesh.tscn" id="1_bcxvm"]
+[ext_resource type="PackedScene" uid="uid://c43qkbsj4a5d6" path="res://Godot/3dStuff/dices/free3DModels/D20.gltf" id="2_8u2xe"]
 
 [node name="d_20" type="RigidBody3D" unique_id=972987166]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1586069832]
 shape = ExtResource("1_2ukhs")
 
-[node name="d20" parent="." unique_id=622091526 instance=ExtResource("1_bcxvm")]
+[node name="D20" parent="." unique_id=33930220 instance=ExtResource("2_8u2xe")]

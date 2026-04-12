@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://db5vxy24nny8a"]
+
+[ext_resource type="PackedScene" uid="uid://d0wcp4ebsj34h" path="res://Godot/3dStuff/dices/free3DModels/D12.gltf" id="1_e8mio"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_siujp"]
+albedo_color = Color(0.5, 0.08333334, 0, 1)
+
+[node name="D12" unique_id=1924471018 instance=ExtResource("1_e8mio")]
+
+[node name="Mesh" parent="." index="0" unique_id=1125184356]
+surface_material_override/0 = SubResource("StandardMaterial3D_siujp")

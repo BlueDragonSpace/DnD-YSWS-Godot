@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://exrghoslq8td"]
+
+[ext_resource type="Shape3D" uid="uid://1fa1tfd1thva" path="res://Godot/3dStuff/dices/d12/d12collider.tres" id="1_uiin1"]
+[ext_resource type="PackedScene" uid="uid://db5vxy24nny8a" path="res://Godot/3dStuff/dices/d12/d_12mesh.tscn" id="2_oo8pd"]
+
+[node name="d_12" type="RigidBody3D" unique_id=243841198]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1582908834]
+shape = ExtResource("1_uiin1")
+
+[node name="D12" parent="." unique_id=1924471018 instance=ExtResource("2_oo8pd")]

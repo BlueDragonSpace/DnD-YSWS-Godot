@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://cau3lq2vvxq4k"]
 
-[ext_resource type="PackedScene" uid="uid://dbipqfvhy0nxo" path="res://Godot/3dStuff/dices/d8/d8.glb" id="1_f11lh"]
+[ext_resource type="PackedScene" uid="uid://b7v4gisp21vjx" path="res://Godot/3dStuff/dices/free3DModels/D8.gltf" id="1_f11lh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4qhm6"]
-albedo_color = Color(0.39215687, 1, 0.39215687, 1)
+albedo_color = Color(0.80747116, 0.36807683, 1.92523e-07, 1)
 
-[node name="d8" unique_id=556660924 instance=ExtResource("1_f11lh")]
+[node name="D8" unique_id=1894528480 instance=ExtResource("1_f11lh")]
 
-[node name="Cube" parent="." index="0" unique_id=491735575]
-material_override = SubResource("StandardMaterial3D_4qhm6")
-cast_shadow = 0
+[node name="Mesh" parent="." index="0" unique_id=750655294]
+surface_material_override/0 = SubResource("StandardMaterial3D_4qhm6")

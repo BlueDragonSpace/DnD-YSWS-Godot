@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://cqsf4oxfdkj1e"]
 
-[ext_resource type="PackedScene" uid="uid://db6fnh2rck1ck" path="res://Godot/3dStuff/dices/d20/d20.glb" id="1_t4bmv"]
+[ext_resource type="PackedScene" uid="uid://c43qkbsj4a5d6" path="res://Godot/3dStuff/dices/free3DModels/D20.gltf" id="1_t4bmv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1gdpx"]
-albedo_color = Color(1, 1, 0.39215687, 1)
+albedo_color = Color(0.55999994, 0.7, 0, 1)
 
-[node name="d20" unique_id=622091526 instance=ExtResource("1_t4bmv")]
+[node name="D20" unique_id=33930220 instance=ExtResource("1_t4bmv")]
 
-[node name="Icosphere" parent="." index="0" unique_id=2030074431]
-material_override = SubResource("StandardMaterial3D_1gdpx")
-cast_shadow = 0
+[node name="Mesh" parent="." index="0" unique_id=1386530968]
+surface_material_override/0 = SubResource("StandardMaterial3D_1gdpx")

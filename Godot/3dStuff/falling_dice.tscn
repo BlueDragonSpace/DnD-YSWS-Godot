@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://sfudhvqa4i70"]
 
 [ext_resource type="PackedScene" uid="uid://bodbf1h6ndftb" path="res://Godot/3dStuff/dices/dice_spawner.tscn" id="1_ip1tc"]
+[ext_resource type="Script" uid="uid://c8cpod0uxsm4l" path="res://Godot/3dStuff/falling_dice.gd" id="1_jydrv"]
+[ext_resource type="Texture2D" uid="uid://u3gcsqwiklgs" path="res://Godot/3dStuff/cartoonWood.png" id="1_mh7p6"]
 [ext_resource type="PackedScene" uid="uid://dnsfrmwqamttd" path="res://Godot/3dStuff/dices/d4/d_4.tscn" id="2_u3lvg"]
 [ext_resource type="PackedScene" uid="uid://c4jxjmge86wfc" path="res://Godot/3dStuff/dices/d20/d_20.tscn" id="2_uffmi"]
+[ext_resource type="PackedScene" uid="uid://cjmwuufaixi0a" path="res://Godot/3dStuff/dices/d10/d_10.tscn" id="4_s5a12"]
 [ext_resource type="PackedScene" uid="uid://bebn1jok0642r" path="res://Godot/3dStuff/dices/d8/d_8.tscn" id="4_u3lvg"]
+[ext_resource type="PackedScene" uid="uid://exrghoslq8td" path="res://Godot/3dStuff/dices/d12/d_12.tscn" id="5_mh7p6"]
+[ext_resource type="PackedScene" uid="uid://u3g87uhxlg4" path="res://Godot/3dStuff/dices/d100/d_100.tscn" id="7_jydrv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dxtmk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -19,13 +24,8 @@ tonemap_mode = 2
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_dxtmk"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uffmi"]
-albedo_color = Color(0.096204735, 0.09620475, 0.096204735, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_ip1tc"]
-size = Vector2(10, 10)
-
 [node name="FallingDice" type="Node3D" unique_id=855874347]
+script = ExtResource("1_jydrv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1862113128]
 environment = SubResource("Environment_ip1tc")
@@ -39,27 +39,57 @@ shadow_enabled = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=2129358747]
 shape = SubResource("WorldBoundaryShape3D_dxtmk")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=1287648668]
-material_override = SubResource("StandardMaterial3D_uffmi")
-mesh = SubResource("PlaneMesh_ip1tc")
+[node name="Sprite3D" type="Sprite3D" parent="Floor" unique_id=427177848]
+transform = Transform3D(-0.0056548254, 0, 0.999984, 0, 1, 0, -0.999984, 0, -0.0056548254, -53.443752, 0, -573.8922)
+pixel_size = 2.0
+axis = 1
+texture = ExtResource("1_mh7p6")
 
-[node name="DiceSpawner" parent="." unique_id=847745559 instance=ExtResource("1_ip1tc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+[node name="d4s" parent="." unique_id=359041000 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+dice = ExtResource("2_u3lvg")
+rand_pos = Vector3(50, 0, 50)
+
+[node name="d6spawner" parent="." unique_id=847745559 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+rand_pos = Vector3(50, 0, 50)
 timer_time = 1.2
 
-[node name="DiceSpawner3" parent="." unique_id=359041000 instance=ExtResource("1_ip1tc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
-dice = ExtResource("2_u3lvg")
+[node name="d8s" parent="." unique_id=1748142216 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+dice = ExtResource("4_u3lvg")
+rand_pos = Vector3(50, 0, 50)
+timer_time = 0.6
 
-[node name="DiceSpawner2" parent="." unique_id=1321969250 instance=ExtResource("1_ip1tc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+[node name="d10s" parent="." unique_id=1561042369 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+dice = ExtResource("4_s5a12")
+rand_pos = Vector3(50, 0, 50)
+timer_time = 1.2
+
+[node name="d12s" parent="." unique_id=134862393 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+dice = ExtResource("5_mh7p6")
+rand_pos = Vector3(50, 0, 50)
+timer_time = 0.6
+
+[node name="d20s" parent="." unique_id=1321969250 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
 dice = ExtResource("2_uffmi")
+rand_pos = Vector3(50, 0, 50)
 timer_time = 0.8
 
-[node name="DiceSpawner4" parent="." unique_id=1748142216 instance=ExtResource("1_ip1tc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
-dice = ExtResource("4_u3lvg")
+[node name="d100" parent="." unique_id=1742345406 instance=ExtResource("1_ip1tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134.42567, 52.68239)
+dice = ExtResource("7_jydrv")
+rand_pos = Vector3(50, 0, 50)
 timer_time = 0.6
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1197689163]
-transform = Transform3D(0.94467515, -0.20929107, 0.25255936, 0, 0.7699802, 0.63806784, -0.3280076, -0.60276675, 0.72738117, 2.875741, 4.01053, 6.3938756)
+transform = Transform3D(0.90923613, -0.35030478, 0.22489169, 0, 0.5402403, 0.8415109, -0.4162808, -0.765132, 0.49120605, 60.465935, 149.50682, 172.25597)
+
+[node name="RestartTimer" type="Timer" parent="." unique_id=1232896889]
+wait_time = 45.0
+autostart = true
+
+[connection signal="timeout" from="RestartTimer" to="." method="_on_restart_timer_timeout"]
